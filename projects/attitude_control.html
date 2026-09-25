@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PROJECT TITLE | Martin Lafargue</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html" class="logo">Martin Lafargue</a>
+
+        <div class="nav-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#research">Research</a>
+            <a href="../index.html#experience">Experience</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- Project Header -->
+    <section class="project-page">
+
+        <a href="../index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
+
+        <p class="eyebrow">PROJECT</p>
+
+        <h1>Attitude Control</h1>
+
+        <p class="project-intro">
+Spacecraft Dynamics course project (University of Cincinnati, 2021)            
+        </p>
+
+
+        <!-- Main Image -->
+        <div class="project-main-image">
+            <img src="../images/wdiag.png">
+
+                 alt="Angular velocities in function of time">
+        </div>
+
+
+        <!-- Project Overview -->
+        <div class="project-section">
+
+            <h2>Project Overview</h2>
+
+            <p>
+           Stabilized a tumbling satellite using reaction wheels: derived Euler's rotational equations for the satellite-plus-wheel system, simulated the tumbling motion in MATLAB, and determined attitude from simulated sensor data with the TRIAD and QUEST algorithms. Designed a nonlinear feedback control law, proven stable via a Lyapunov function, that drove the satellite to zero attitude and angular velocity within 50 seconds, then tuned the gains and checked reaction-wheel speeds for feasibility.
+            </p>
+
+        </div>
+
+
+        <!-- Additional Images -->
+        <div class="project-images">
+
+            <div class="project-detail-image">
+                <img src="../images/3dplotdiag.png"
+                     alt="3D plot of angular velocities">
+            </div>
+
+            <div class="project-detail-image">
+                <img src="../images/reactionwheel.png"
+                     alt="Reaction wheel speed over time">
+            </div>
+
+        </div>
+
+
+        <!-- Technical Details -->
+        <div class="project-section">
+
+            <h2>Tools & Methods</h2>
+
+            <p class="tags">
+               MATLAB, nonlinear control theory, Lyapunov stability analysis, attitude determination algorithms (TRIAD, QUEST).
+            </p>
+
+        </div>
+
+
+        <!-- Source Material -->
+        <div class="project-source">
+
+            <h2>Source Material</h2>
+
+            <p>
+                Spacecraft Dynamics Report
+            </p>
+
+            <a href="../reports/attitude_control.pdf"
+               class="button"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Source Material →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Martin Lafargue</p>
+</footer>
+
+</body>
+</html>

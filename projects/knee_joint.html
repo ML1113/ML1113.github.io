@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Knee Joint Modeling| Martin Lafargue</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html" class="logo">Martin Lafargue</a>
+
+        <div class="nav-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#research">Research</a>
+            <a href="../index.html#experience">Experience</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- Project Header -->
+    <section class="project-page">
+
+        <a href="../index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
+
+        <p class="eyebrow">PROJECT</p>
+
+        <h1>Knee Joint Modeling for Human Walk Simulation</h1>
+
+        <p class="project-intro">
+ ENSEIRB-MATMECA (Bordeaux INP) |  Academic group project (TER) | 4 people | 2019–2020
+        </p>
+
+
+        <!-- Main Image -->
+        <div class="project-main-image">
+            <img src="../images/knee-joint.jpg">
+
+                 alt="Knee Joint Model">
+        </div>
+
+
+        <!-- Project Overview -->
+        <div class="project-section">
+
+            <h2>Project Overview</h2>
+
+            <p>
+       Follow-on to a prior full-body walking-simulation project by students from the precedent year, this time focused specifically on modeling the knee joint more realistically than a simple ball-and-socket approximation. Developed a mechanical model representing the femur-condyle contact as a cylinder-on-plane connection, with lateral and cruciate ligaments modeled as springs, capturing both the flexion motion and the associated rolling/sliding translation. Derived the equations of motion, built a finite-difference numerical scheme in FORTRAN 90, and compared the simulated flexion-angle trajectory against reference human-walk data, discussing where the simplified model diverges from real walk dynamics.
+            </p>
+
+        </div>
+
+
+        <!-- Additional Images -->
+        <div class="project-images">
+
+            <div class="project-detail-image">
+                <img src="../images/anatomie_genou.png"
+                     alt="Knee anatomy">
+            </div>
+
+            <div class="project-detail-image">
+                <img src="../images/kneeangle.png"
+                     alt="Angle of the knee during human walk">
+            </div>
+
+        </div>
+
+
+        <!-- Technical Details -->
+        <div class="project-section">
+
+            <h2>Tools & Methods</h2>
+
+            <p class="tags">
+               FORTRAN 90, rigid body mechanics, numerical scheme design (finite differences), biomechanics.
+            </p>
+
+        </div>
+
+
+        <!-- Source Material -->
+        <div class="project-source">
+
+            <h2>Source Material</h2>
+
+            <p>
+               Knee Joint Modeling Report
+            </p>
+
+            <a href="../reports/TER_Knee.pdf"
+               class="button"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Source Material →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Martin Lafargue</p>
+</footer>
+
+</body>
+</html>

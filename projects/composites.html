@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Composites | Martin Lafargue</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html" class="logo">Martin Lafargue</a>
+
+        <div class="nav-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#research">Research</a>
+            <a href="../index.html#experience">Experience</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- Project Header -->
+    <section class="project-page">
+
+        <a href="../index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
+
+        <p class="eyebrow">PROJECT</p>
+
+        <h1>Composite Material Modeling from 2D Microscopy Images</h1>
+
+        <p class="project-intro">
+ENSEIRB-MATMECA (Bordeaux INP) | Academic Group Project (TER) | 6 people
+        </p>
+
+
+        <!-- Main Image -->
+        <div class="project-main-image">
+            <img src="../images/composites.png">
+
+                 alt="Microscope Image of Composite Material">
+        </div>
+
+
+        <!-- Project Overview -->
+        <div class="project-section">
+
+            <h2>Project Overview</h2>
+
+            <p>
+           Built a full pipeline to reconstruct the mechanical behavior of a carbon-carbon composite (a sample from an Ariane 6 divergent) directly from 2D microscope images. The pipeline: an image-processing stage in C++ (Canny edge detection, contour cleanup, circular Hough transform) to locate and approximate the carbon fibers as circles; a meshing stage using Gmsh to generate a triangular mesh distinguishing fiber and matrix regions; and a custom linear-elasticity finite element solver written in C++ (with a comparison of iterative linear solvers — Conjugate Gradient, GMRES, FOM, etc.) to run virtual tensile tests. Results (apparent Young's moduli E1, E2 and shear modulus G12) were cross-validated against Abaqus and against the rule-of-mixtures estimate, all falling within a few percent of each other and consistent with expected fiber/matrix bounds.
+            </p>
+
+        </div>
+
+
+        <!-- Additional Images -->
+        <div class="project-images">
+
+            <div class="project-detail-image">
+                <img src="../images/Chargementy.png"
+                     alt="Abaqus Geometry and BCs for a traction test in y direction">
+            </div>
+
+            <div class="project-detail-image">
+                <img src="../images/U2y.png"
+                     alt="Deformation of material">
+            </div>
+
+        </div>
+
+
+        <!-- Technical Details -->
+        <div class="project-section">
+
+            <h2>Tools & Methods</h2>
+
+            <p class="tags">
+               C++, image processing, finite element method, meshing, numerical linear algebra, validation against a commercial solver (Abaqus).
+            </p>
+
+        </div>
+
+
+        <!-- Source Material -->
+        <div class="project-source">
+
+            <h2>Source Material</h2>
+
+            <p>
+                TER Composites Report
+            </p>
+
+            <a href="../reports/TER_composites.pdf"
+               class="button"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Source Material →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Martin Lafargue</p>
+</footer>
+
+</body>
+</html>
